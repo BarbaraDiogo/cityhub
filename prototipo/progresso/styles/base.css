@@ -1,0 +1,151 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.navbar {
+    background-color: rgba(23, 10, 41, 0.5); /* Cor de fundo da navbar */
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 999; /* Para garantir que a navbar fique sobreposta a outros elementos */
+}
+
+.logo{
+    width: 0;
+    height: 5px;
+}
+
+img{
+    width: 30px;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 7px;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar ul li a i{
+    color: white;
+}
+
+.navbar ul li a:hover{
+    background-color: #ffc20061;
+    border-radius: 2px;
+}
+
+
+button{
+    width: 13%;
+    margin: 5%;
+    margin-top: 20%;
+    margin-right: 17%;
+    font-size:x-large;
+}
+
+.content{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image:url(../images/progesso_background.png);
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+}
+
+.container_progresso{
+    background-color: #160928;
+    opacity: 0.6;
+    width: 20%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 20px;
+    border: 10px solid white ;
+}
+
+.progresso{
+    align-self: flex-end;
+    margin-bottom: 2%;
+}
+
+.progresso-barra-container {
+    width: 550px;
+    margin-left: 120px;
+    background-color: #dddddd8f;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+.progresso-barra {
+    height: 80px;
+    background-color: #4CAF50;
+    width: 30%;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out; /* Animação suave para mudanças de largura */
+}
+
+.raio {
+    width: auto;
+    height: 17%;
+    position: absolute;
+    top: 73%;
+    left: 47%;
+    transform: translate(-50%, -50%); /* Ajuste fino para centralização perfeita */
+    z-index: 2; /* Garante que a imagem fique por cima da barra de progresso */
+}
+
+.rank{
+    background-color: #160928;
+    opacity: 0.6;
+    border: 10px solid white;
+    padding: 10px;
+    margin-left: 50%; 
+    width: 400px;
+    text-align: center;
+}
+
+.rank span{
+    color: #4CAF50;
+}
+
+.container_progresso h1{
+    color: #fff597;
+    font-size: xxx-large;
+}
+
+.container_progresso h3{
+    color: #fff597;
+    padding-top: 40px;
+    font-size: xx-large;
+}
+
+.rank p{
+    font-size: larger;
+    color: aliceblue;
+}

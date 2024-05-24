@@ -1,0 +1,129 @@
+*{
+
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container_login{
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255,0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 30px rgba(0,0,0, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.login{
+    width: 250px;
+    padding: 30px 10px;
+    backdrop-filter: blur(20px);
+}
+.cadastro {
+    width: 450px;
+    text-align: center;
+    padding: 30px 10px;
+    margin: 0 10px; /* Espaçamento entre as colunas */
+}
+
+.container_login .login h2{
+    margin-bottom: 115px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.login button{
+    font-size: 20px;
+    outline: none;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0,0.2);
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 40px;
+    box-shadow: 3px 3px 30px rgba(0,0,0, 0.3);
+    margin-top: 15px;
+    color: white;
+    background-color: #ffc20061;
+}
+
+.container_login .cadastro h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+span{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.login h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: x-large;
+    color: #170929;
+    margin-left: 10px;
+}
+
+.container_login .field{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container_login .field input{
+    height: 100%;
+    border-radius: 50px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 40px;
+}
+
+.container_login .field i{
+    position: absolute;
+    left: 97px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 40px;
+    font-size: 18px;
+    color: #170929a6;
+}
+
+.cadastro button{
+    font-size: 20px;
+    outline: none;
+    padding: 8px 15px;
+    border: 1px solid rgba(0, 0, 0,0.2);
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+    margin: 30px;
+    box-shadow: 3px 3px 30px rgba(0,0,0, 0.3);
+    background-color: #170929;
+    color: white;
+}
+
+.container_login a,
+.container_login p{
+    margin-top: 15px;
+}
+
+.container_login a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container_login a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,89 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(23, 10, 41, 0.5); /* Cor de fundo da navbar */
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 999; /* Para garantir que a navbar fique sobreposta a outros elementos */
+}
+
+.logo{
+    width: 0;
+    height: 5px;
+}
+
+img{
+    width: 30px;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 7px;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar ul li a i{
+    color: white;
+}
+
+.navbar ul li a:hover{
+    background-color: #ffc20061;
+    border-radius: 2px;
+}
+
+
+button{
+    width: 13%;
+    margin: 5%;
+    margin-top: 20%;
+    margin-right: 17%;
+    font-size:x-large;
+}
+
+.content{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image:url(../images/INFORMATION\ CLEAN.png);
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+}
+
+.container_info{
+    background-color: darkmagenta;
+    opacity: 60%;
+    width: 65%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border: 10px white ;
+    border-style: dashed solid dashed solid;
+}
+
+.container_info p{
+    font-size: x-large;
+    color: aliceblue;
+}

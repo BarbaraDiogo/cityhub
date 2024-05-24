@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cityhub - Homepage</title>
+
+</head>
+<script>
+    window.onload = function() {
+        // Extrai o número da porcentagem do texto do elemento h3
+        const porcentagemText = document.getElementById('porcentagem').innerText;
+        const porcentagem = parseInt(porcentagemText);
+    
+        // Atualiza a barra de progresso com a porcentagem extraída
+        updateBarraProgresso(porcentagem);
+    };
+    
+    // Função para atualizar a largura da barra de progresso
+    function updateBarraProgresso(porcentagem) {
+        document.getElementById('BarraProgresso').style.width = porcentagem + '%';
+    }
+</script>
+    
+    
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+            <li><a href="../homepage/homepage.html">Início</a></li>
+            <li><a href="../info/info.html">Sobre</a></li>
+            <li><a href="../login/login.html" alt="Login/Cadastro"><i class="fa fa-user"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="progresso">
+            <div class="progresso-barra-container">
+                <div class="progresso-barra" id="BarraProgresso"></div>
+                <img src="images/raio.png" class="raio" alt="Raio">
+            </div>
+            <div class="rank">
+                <p>Rank: <span>AMIGO DA NATUREZA</span></p>
+            </div>
+        </div>
+        <div class="container_progresso">
+            <h1>Você economizou:</h1>
+            <br>
+            <h3>R$ 30,00 este mês</h3>
+            <h3 id="porcentagem">25% este mês</h3>
+        </div>
+    </div>
+    
+</body>
